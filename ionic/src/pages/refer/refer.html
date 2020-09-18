@@ -1,0 +1,42 @@
+<div class="container">
+	    <div class="row row2 center" style="width:100%;padding:0px;background-color:#fff;border-radius:5px 5px 0px 0px;">
+		    	<div style="width:100%;background:#252362;color:#000000;padding:5px;text-align:center;border-radius:5px 5px 0px 0px" >
+					<h4 style="color: #FFFFFF">Refer Friend</h4>
+				</div>
+				<div class="content-back" style="width: 100%">
+          <ion-row>
+              
+        <ion-col>
+            <ion-list inset>
+
+            <ion-item >
+              <ion-label>
+                <ion-icon name="person"></ion-icon>
+              </ion-label>
+              <ion-input placeholder="Name" type="text" [(ngModel)]="objectblock.name" required name="name" autofocus></ion-input>
+            </ion-item>
+            <ion-item >
+              <ion-label>
+                <ion-icon name="tablet-portrait"></ion-icon>
+              </ion-label>
+              <ion-input placeholder="Mobile" type="number" [(ngModel)]="objectblock.mobile" required name="mobile"></ion-input>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+          <ion-row>
+          <ion-col>
+            <button ion-button block mode="ios" color="light" (click)="closeModal()"  style="width:100%">
+              Cancel
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button block mode="ios"  [disabled]="disabled" color="success" (click)="refer(objectblock)"  style="width:100%">
+             Submit
+            </button>
+          </ion-col>
+        </ion-row>
+        </div>
+		
+		</div>
+    </div>

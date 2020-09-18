@@ -1,0 +1,56 @@
+<ion-header style="background-color: #252362;">
+  <ion-toolbar color="primary">
+    <ion-grid>
+      <ion-row style="vertical-align: middle">
+        <ion-col col-1 text-left style="vertical-align: middle"  style="vertical-align: middle; font-size: 20px;" >
+         <button ion-button menuToggle left>
+            <ion-icon name="menu" style="color:#fff;"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col col-10 text-center style="vertical-align: middle; font-size: 18px; color: #fff;font-weight: 500;margin-top: 10px">
+        </ion-col>
+        <ion-col col-1 text-right style="vertical-align: middle">
+          <img src="assets/cpi.png" style="width: 25px;">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+<ion-card style="background-color: #252362; padding:10px;margin: 0px; border-radius: 0px; height: 50px; width: 100%">
+    <h4 style="color:#fff; font-weight: bold; text-align: center">Vegetable Service Engine</h4>
+    <div style="padding:20px;background-color: #252362;color: #fff;font-size: 8px;text-align: center">
+    </div>
+    </ion-card>
+</ion-header>
+
+<ion-content>
+<ion-card>
+     <ion-list class="list">
+
+        <ion-item class="listitem" (click)="openPage('AddPage');" menuClose>
+          <ion-icon name="add" style="font-size: 40px; padding-right:5px;color: #2d2d2d" item-left></ion-icon>
+            <span style="font-size: 20px;font-weight: bold;color: #2d2d2d;">Add Vegetable</span>
+            
+        </ion-item>
+        <hr>
+         <ion-item class="listitem" (click)="openPage('ListPage');" menuClose>
+          <ion-icon name="ios-create-outline" style="font-size: 40px; padding-right:5px;color: #2d2d2d" item-left></ion-icon>
+            <span style="font-size: 20px;font-weight: bold;color: #2d2d2d;">Update Vegetable</span>
+            
+        </ion-item>
+        <hr>
+         <ion-item class="listitem" (click)="openPage('ListPage');" menuClose>
+          <ion-icon name="md-close" style="font-size: 40px; padding-right:5px;color: #2d2d2d" item-left></ion-icon>
+            <span style="font-size: 20px;font-weight: bold;color: #2d2d2d;">Delete Vegetable</span>
+            
+        </ion-item>
+        <hr>
+        <ion-item class="listitem" (click)="openPage('ListPage');" menuClose>
+          <ion-icon name="ios-calculator" style="font-size: 40px; padding-right:5px;color: #2d2d2d" item-left></ion-icon>
+            <span style="font-size: 20px;font-weight: bold;color: #2d2d2d;">Calculate Cost</span>
+            
+        </ion-item>
+        
+    </ion-list>
+    </ion-card>   
+  
+</ion-content>

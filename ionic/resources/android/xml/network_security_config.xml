@@ -1,0 +1,5 @@
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain>35.193.234.253</domain>
+    </domain-config>
+</network-security-config>

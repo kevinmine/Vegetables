@@ -1,0 +1,18 @@
+<div class="container">
+	    <div class="row row2 center" style="width:100%;padding:0px;background-color:#fff;border-radius:5px 5px 0px 0px;">
+		    	<div style="width:100%;background:#282460;color:#000000;padding:5px;text-align:center;border-radius:5px 5px 0px 0px" >
+					<h4 style="color: #FFFFFF">{{title}}</h4>
+				</div>
+				<div class="content-back" style="width: 100%">
+          <div [innerHTML]="template" style="color:#222;font-size:14px;width:100%;padding:20px 20px 0px 20px; text-align: center;"></div>
+          <ion-row padding>
+            <ion-col class="center">
+              <button  ion-button block mode="ios" color="success" (click)="closeModal()"  style="width:100%">
+                Okay
+              </button>
+            </ion-col>
+          </ion-row>
+        </div>
+			</div>
+		</div>
+    

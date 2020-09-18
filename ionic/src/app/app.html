@@ -1,0 +1,41 @@
+<!--<ion-nav [root]="rootPage"></ion-nav>-->
+<ion-menu [content]="content" style="background: #fff;" side="left" id="menu1">
+
+  <ion-content class="cont"  style="background: #fff; color: #333" >
+      <ion-card text-center class="hide-card">
+      <img src="assets/profile.png" class="custom-avatar  img-responsive"/>
+      <h2>Welcome</h2>
+      <hr>
+    </ion-card>
+  
+   <ion-list class="list">
+         <ion-item class="listitem" (click)="openPage('AddPage');" menuClose>
+          <ion-icon name="add" style="font-size: 40px; padding-right:5px;color: #2d2d2d" item-left></ion-icon>
+            <span style="font-size: 20px;font-weight: bold;color: #2d2d2d;">Add Vegetable</span>
+            
+        </ion-item>
+        <hr>
+         <ion-item class="listitem" (click)="openPage('ListPage');" menuClose>
+          <ion-icon name="ios-create-outline" style="font-size: 40px; padding-right:5px;color: #2d2d2d" item-left></ion-icon>
+            <span style="font-size: 20px;font-weight: bold;color: #2d2d2d;">Update Vegetable</span>
+            
+        </ion-item>
+        <hr>
+         <ion-item class="listitem" (click)="openPage('ListPage');" menuClose>
+          <ion-icon name="md-close" style="font-size: 40px; padding-right:5px;color: #2d2d2d" item-left></ion-icon>
+            <span style="font-size: 20px;font-weight: bold;color: #2d2d2d;">Delete Vegetable</span>
+            
+        </ion-item>
+        <hr>
+        <ion-item class="listitem" (click)="openPage('ListPage');" menuClose>
+          <ion-icon name="ios-calculator" style="font-size: 40px; padding-right:5px;color: #2d2d2d" item-left></ion-icon>
+            <span style="font-size: 20px;font-weight: bold;color: #2d2d2d;">Calculate Cost</span>
+            
+        </ion-item>
+      </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

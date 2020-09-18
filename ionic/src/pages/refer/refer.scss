@@ -1,0 +1,15 @@
+page-refer {
+ion-modal {
+    ion-backdrop {
+        visibility: visible;
+    }
+    .modal-wrapper {
+        width: 80%;
+        height: 50%;
+        margin-top: 38%;
+        margin-right: 10%;
+        margin-left: 10%;
+        position: absolute;
+    }
+}
+}

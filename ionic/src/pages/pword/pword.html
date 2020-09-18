@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row style="vertical-align: middle">
+        <ion-col col-1 text-left style="vertical-align: middle"  style="vertical-align: middle; font-size: 20px;" >
+         <a  (click)="openPage('LoginPage')"><ion-icon name="key" color="primary" size="large"></ion-icon></a>
+        </ion-col>
+        <ion-col col-10 text-center style="vertical-align: middle; font-size: 12px; color: #333;font-weight: 500;margin-top: 10px">
+          Welcome {{fname}}
+        </ion-col>
+        <ion-col col-1 text-right style="vertical-align: middle">
+          <img src="assets/cp.png" style="width: 25px;">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-row class="logo-row">
+    <ion-col></ion-col>
+    <ion-col width-67>
+      <img src="assets/logo-primary.png"/>
+    </ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+  <h6 text-center margin-vertical style="color: #333;">Enter PIN for <strong>07XX XXX {{mobile2}}</strong> to login</h6>
+  <div text-center large margin-vertical style="color: #5e5e5e;">
+     <ion-icon [name]="pin.length>0 ? 'radio-button-on' : 'radio-button-off'"></ion-icon> <ion-icon [name]="pin.length>1 ? 'radio-button-on' : 'radio-button-off'"></ion-icon> <ion-icon [name]="pin.length>2 ? 'radio-button-on' : 'radio-button-off'"></ion-icon> <ion-icon [name]="pin.length>3 ? 'radio-button-on' : 'radio-button-off'"></ion-icon> 
+  </div>
+
+  <div>
+    <ion-grid text-center  color="secondary">
+      <ion-row>
+        <ion-col>
+            <button ion-button outline large (click)="handleInput('1')">1</button>
+        </ion-col>
+        <ion-col>
+            <button ion-button outline large (click)="handleInput('2')">2</button>
+        </ion-col>
+        <ion-col>
+            <button ion-button outline large (click)="handleInput('3')">3</button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+            <button ion-button outline large (click)="handleInput('4')">4</button>
+        </ion-col>
+        <ion-col>
+            <button ion-button outline large (click)="handleInput('5')">5</button>
+        </ion-col>
+        <ion-col>
+            <button ion-button outline large (click)="handleInput('6')">6</button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+            <button ion-button outline large (click)="handleInput('7')">7</button>
+        </ion-col>
+        <ion-col>
+            <button ion-button outline large (click)="handleInput('8')">8</button>
+        </ion-col>
+        <ion-col>
+            <button ion-button outline large (click)="handleInput('9')">9</button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+            <button ion-button outline large (click)="handleInput('0')">0</button>
+        </ion-col>
+        <ion-col>
+            <button ion-button large clear (click)="handleInput('clear')"><ion-icon name="backspace"></ion-icon></button>
+        </ion-col>
+      </ion-row>
+      <!--<ion-row>
+        <ion-col>
+          
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+          <button button clear large (click)="emitEvent()">OK</button>
+        </ion-col>
+      </ion-row>-->
+    </ion-grid>
+  </div>
+  <div text-center>
+    <span text-center style="color: #333; text-align: center" (click)="reset()">Forgot Pin?</span>
+       
+  </div>
+</ion-content>

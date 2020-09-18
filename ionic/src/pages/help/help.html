@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-grid>
+      <ion-row style="vertical-align: middle">
+        <ion-col col-1 text-left style="vertical-align: middle"  style="vertical-align: middle; font-size: 20px;" >
+         <button ion-button menuToggle left>
+            <ion-icon name="menu" style="color:#fff;"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col col-10 text-center style="vertical-align: middle; font-size: 18px; color: #fff;font-weight: 500;margin-top: 10px">
+         Contact Us
+        </ion-col>
+        <ion-col col-1 text-right style="vertical-align: middle" (click)="openPage('HomePage')">
+          <img src="assets/cpi.png" style="width: 25px;">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+<ion-row class="logo-row">
+    <ion-col></ion-col>
+    <ion-col width-67>
+      <img src="assets/logo-primary.png"/>
+    </ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+<ion-card>
+     <ion-list class="list">
+
+        <ion-item class="listitem" (click)="openPage('Instagram');" menuClose>
+          <ion-icon style="color: #C13584" class="icon" name="logo-instagram" item-left></ion-icon>
+            Instagram
+            
+        </ion-item>
+        <hr>
+        <ion-item class="listitem" (click)="openPage('Email');" menuClose>
+          <ion-icon style="color:#f26722" class="icon" name="mail" item-left></ion-icon>
+            Email
+        </ion-item>
+        
+    </ion-list>
+    </ion-card>
+</ion-content>

@@ -1,0 +1,95 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Create Account</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="background:#282460;">
+ <div class="row row2 center" style="width:100%;padding:0px;background-color:#fff;border-radius:5px 5px 0px 0px;">
+		    	<div style="width:100%;background:#f4f4f4;color:#000000;padding:5px;text-align:center;border-radius:5px 5px 0px 0px" >
+					<h4 style="color: #333;margin-top: 5px;">Your Details</h4>
+				</div>
+				<div class="content-back" style="width: 100%;">
+          <ion-row>
+        <ion-col>
+          <ion-list inset>
+
+            <ion-item>
+              <ion-label>
+                <ion-icon name="create"></ion-icon>
+              </ion-label>
+              <ion-input placeholder="First Name" type="text" [(ngModel)]="objectblock.fname" required name="fname" required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>
+                <ion-icon name="create"></ion-icon>
+              </ion-label>
+              <ion-input placeholder="Middle Name" type="text" [(ngModel)]="objectblock.mname" required name="mname" required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>
+                <ion-icon name="create"></ion-icon>
+              </ion-label>
+              <ion-input placeholder="Last Name" type="text" [(ngModel)]="objectblock.lname" required name="lname" required></ion-input>
+            </ion-item>
+            
+            <ion-item>
+              <ion-label>
+                <ion-icon name="phone-portrait"></ion-icon>
+              </ion-label>
+              <ion-input placeholder="Mobile" type="number" required name="mobile" [(ngModel)]="objectblock.mobile"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>
+                <ion-icon name="at"></ion-icon>
+              </ion-label>
+              <ion-input placeholder="Email" type="email" required name="email" [(ngModel)]="objectblock.email"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>
+                <ion-icon name="calendar"></ion-icon>
+              </ion-label>
+              <ion-datetime style="width: 100%" placeholder="Date Of Birth" display-format="MMM DD, YYYY" [(ngModel)]="objectblock.dob"></ion-datetime>
+            </ion-item>
+            <ion-item>
+              <ion-label>
+                <ion-icon name="card"></ion-icon>
+              </ion-label>
+              <ion-input placeholder="Passport/ID Number" type="text" required name="id_no" [(ngModel)]="objectblock.id_no"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>
+                <ion-icon name="key"></ion-icon>
+              </ion-label>
+              <ion-input placeholder="Pin" type="number" [(ngModel)]="objectblock.pin" required name="pin"[maxlength]="4" type="tel"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>
+                <ion-icon name="happy"></ion-icon>
+              </ion-label>
+              <ion-input placeholder="Referral Code" type="text" name="ref_code" [(ngModel)]="objectblock.ref_code"></ion-input>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+          <ion-row>
+          <ion-col>
+            <button ion-button block mode="ios" color="danger" (click)="signup(objectblock)"  style="width:100%">
+                CREATE ACCOUNT
+            </button>
+          </ion-col>
+        </ion-row>
+        </div>
+		
+		</div>
+
+</ion-content>
